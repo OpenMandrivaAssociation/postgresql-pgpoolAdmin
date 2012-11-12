@@ -1,0 +1,52 @@
+diff -p -up pgpoolAdmin-2.3/conf/pgmgt.conf.php.urin pgpoolAdmin-2.3/conf/pgmgt.conf.php
+--- pgpoolAdmin-2.3/conf/pgmgt.conf.php.urin	2006-09-08 05:39:09.000000000 +0200
++++ pgpoolAdmin-2.3/conf/pgmgt.conf.php	2010-07-30 22:42:14.650296479 +0200
+@@ -1,15 +1,15 @@
+ <?php
+-define('_PGPOOL2_LANG', 'ja');
+-define('_PGPOOL2_CONFIG_FILE', '/usr/local/etc/pgpool.conf');
+-define('_PGPOOL2_PASSWORD_FILE', '/usr/local/etc/pcp.conf');
+-define('_PGPOOL2_COMMAND', '/usr/local/bin/pgpool');
++define('_PGPOOL2_LANG', 'en');
++define('_PGPOOL2_CONFIG_FILE', '/etc/pgpool-II/pgpool.conf');
++define('_PGPOOL2_PASSWORD_FILE', '/etc/pgpool-II/pcp.conf');
++define('_PGPOOL2_COMMAND', '/usr/bin/pgpool');
+ define('_PGPOOL2_CMD_OPTION_C', '0');
+ define('_PGPOOL2_CMD_OPTION_D', '0');
+ define('_PGPOOL2_CMD_OPTION_M', 's');
+ define('_PGPOOL2_CMD_OPTION_N', '0');
+-define('_PGPOOL2_LOG_FILE', '/tmp/pgpool.log');
+-define('_PGPOOL2_PCP_DIR', '/usr/local/bin');
+-define('_PGPOOL2_PCP_HOSTNAME', 'localhost');
++define('_PGPOOL2_LOG_FILE', '/var/log/pgpool/pgpool');
++define('_PGPOOL2_PCP_DIR', '/usr/bin');
++define('_PGPOOL2_PCP_HOSTNAME', '');
+ define('_PGPOOL2_PCP_TIMEOUT', '');
+ define('_PGPOOL2_STATUS_REFRESH_TIME', '0');
+ ?>
+diff -p -up pgpoolAdmin-2.3/install/defaultParameter.php.urin pgpoolAdmin-2.3/install/defaultParameter.php
+--- pgpoolAdmin-2.3/install/defaultParameter.php.urin	2008-02-01 08:06:41.000000000 +0100
++++ pgpoolAdmin-2.3/install/defaultParameter.php	2010-07-30 22:43:33.465635633 +0200
+@@ -23,16 +23,16 @@
+  * @version    CVS: $Id: defaultParameter.php,v 1.3 2008/02/01 07:06:41 yamaguti Exp $
+  */
+ 
+-define("_PGPOOL2_CONFIG_FILE", "/usr/local/etc/pgpool.conf");
+-define("_PGPOOL2_PASSWORD_FILE", "/usr/local/etc/pcp.conf");
+-define("_PGPOOL2_COMMAND", "/usr/local/bin/pgpool");
++define("_PGPOOL2_CONFIG_FILE", "/etc/pgpool-II/pgpool.conf");
++define("_PGPOOL2_PASSWORD_FILE", "/etc/pgpool-II/pcp.conf");
++define("_PGPOOL2_COMMAND", "/usr/bin/pgpool");
+ define("_PGPOOL2_CMD_OPTION_C", "0");
+ define("_PGPOOL2_CMD_OPTION_D", "0");
+ define("_PGPOOL2_CMD_OPTION_M", "s");
+ define("_PGPOOL2_CMD_OPTION_N", "0");
+-define("_PGPOOL2_LOG_FILE", "/tmp/pgpool.log");
+-define("_PGPOOL2_PCP_DIR", "/usr/local/bin");
+-define("_PGPOOL2_PCP_HOSTNAME", "localhost");
++define("_PGPOOL2_LOG_FILE", "/var/log/pgpool/pgpool");
++define("_PGPOOL2_PCP_DIR", "/usr/bin");
++define("_PGPOOL2_PCP_HOSTNAME", "");
+ define("_PGPOOL2_PCP_TIMEOUT", "10");
+ define("_PGPOOL2_STATUS_REFRESH_TIME", "0");
+ 
