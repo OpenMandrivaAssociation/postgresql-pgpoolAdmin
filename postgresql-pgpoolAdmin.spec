@@ -7,7 +7,7 @@ Version:	2.3
 Release:	%mkrel 1
 License:	BSD
 Group:		Applications/Databases
-URL:		http://pgpool.projects.postgresql.org
+URL:		https://pgpool.projects.postgresql.org
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 Source0:	http://pgfoundry.org/frs/download.php/2109/%{short_name}-%{version}.tar.gz
